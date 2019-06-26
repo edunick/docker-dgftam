@@ -26,6 +26,7 @@
   Si quisieramos cambiar los valores hay que editar el Dockerfile y reconstruir la imagen
   Luego instanciamos el contenedor
   #docker run -d -p 5432:5432 --network="fortalecimiento" --name serverdb eg_postgresql
+  
 2) Ejecutar lo siguiente para el PgAdmin
   Traemos la imagen #docker pull dpage/pgadmin4
   Luego instanciamos el contenedor
