@@ -17,21 +17,17 @@
 
 1) Entrar a release/nginx-certbot/data/postgres ahi esta el Dockerfile para el postgres
 
-Construimos la imagen con el siguiente comando #docker build -t eg_postgresql .
-Esto va a crear por defecto
-usr: docker
-database: docker
-pass: docker
+  Construimos la imagen con el siguiente comando #docker build -t eg_postgresql .
+  Esto va a crear por defecto
+  usr: docker
+  database: docker
+  pass: docker
 
-Si quisieramos cambiar los valores hay que editar el Dockerfile y reconstruir la imagen
-
-Luego instanciamos el contenedor
-
-#docker run -d -p 5432:5432 --network="fortalecimiento" --name serverdb eg_postgresql
-
-
+  Si quisieramos cambiar los valores hay que editar el Dockerfile y reconstruir la imagen
+  Luego instanciamos el contenedor
+  #docker run -d -p 5432:5432 --network="fortalecimiento" --name serverdb eg_postgresql
 2) Ejecutar lo siguiente para el PgAdmin
-Traemos la imagen #docker pull dpage/pgadmin4
-Luego instanciamos el contenedor
-docker run -p 8080:80 --name pgadmin --network="fortalecimiento" -e "PGADMIN_DEFAULT_EMAIL=edunick@gmail.com" -e "PGADMIN_DEFAULT_PASSWORD=docker" -d dpage/pgadmin4
+  Traemos la imagen #docker pull dpage/pgadmin4
+  Luego instanciamos el contenedor
+  docker run -p 8080:80 --name pgadmin --network="fortalecimiento" -e "PGADMIN_DEFAULT_EMAIL=edunick@gmail.com" -e "PGADMIN_DEFAULT_PASSWORD=docker" -d dpage/pgadmin4
 
