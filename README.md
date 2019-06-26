@@ -9,7 +9,7 @@
 5) Clonar este repositorio para eso entrar a: #cd /release y luego #git clone https://github.com/edunick/docker-dgftam.git nginx-cerbot
 6) Entrar a #cd /release/nginx-cerbot
 7) Dentro de data/nginx dejar todos los archivos .conf que vamos a usar segun los dominios que tengamos
-8) Volver a #cd /release/nginx-cerbot y editar #nano init-letsencrypt.sh alli en domains=(midominio.com) ponemos el dominio o sub-dominio que necesitamos agregar, ctrol-x guardar y salir.
+8) Volver a #cd /release/nginx-cerbot y editar #nano init-letsencrypt.sh alli en domains=(midominio.com) ponemos el dominio o sub-dominio que necesitamos agregar, ctrol-x guardar y salir. Y ejecutar dentro de /release/nginx-certbot/ #./init-letsencrypt.sh alli se genera el certificado y se reinicia el nginx.
 9) Levantar los contenedores con #docker-compose up -d
 10) Si queremos agregar otro sub-dominio volver al paso 6)-8)
 
