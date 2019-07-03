@@ -31,6 +31,3 @@
   Traemos la imagen #docker pull dpage/pgadmin4
   Luego instanciamos el contenedor
   docker run -p 8080:80 --name pgadmin --network="fortalecimiento" -e "PGADMIN_DEFAULT_EMAIL=edunick@gmail.com" -e "PGADMIN_DEFAULT_PASSWORD=docker" -d dpage/pgadmin4
-
-3) Ejecutar lo sguiente para el Gitlab
-   docker run -p 8081:80 --name gitlab --network="fortalecimiento" -d gitlab/gitlab-ce
